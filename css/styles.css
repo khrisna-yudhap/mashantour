@@ -11392,7 +11392,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.5) 100%), url("../assets/img/carousel2.jpg");
+  background: url("../assets/img/carousel2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
