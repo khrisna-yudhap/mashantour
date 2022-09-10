@@ -52,10 +52,20 @@ a {
   position: relative;
 }
 
+.blog-hero {
+  height: 15%;
+  width: 100%;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero_4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .hero-text {
-  text-align: left;
+  text-align: center;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -657,6 +667,21 @@ a {
     #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
       opacity: 1;
     }    
+
+    .portfolio-btn{
+      margin: 10px;
+      padding: 10px;
+      color: #fff;
+      background-color: #ad0101;
+      font-weight: bold;
+      border-radius: 5px;
+      width: 200px;
+    }
+
+    .portfolio-btn:hover{
+      background-color: #ddd;
+      transition:ease 0.5s;
+    }
 
 
 @media only screen and (max-width: 450px) {
