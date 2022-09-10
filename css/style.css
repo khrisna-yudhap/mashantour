@@ -52,7 +52,7 @@ a {
   position: relative;
 }
 
-<<<<<<< HEAD
+
 .blog-new-post {
   height: 50%;
   width: 100%;
@@ -62,9 +62,8 @@ a {
   background-size: cover;
   position: relative;
 }
-=======
 
->>>>>>> c7a136aefc64433608953ac031c5d6b809a5d16f
+
 
 .blog-hero {
   height: 15%;
@@ -707,7 +706,7 @@ a {
       transition:ease 0.5s;
     }
 
-<<<<<<< HEAD
+
 /*Blog Page*/
 
 .new-post{
@@ -766,7 +765,7 @@ a {
   height: 200px;
 }
 /*End of Blog Page*/
-=======
+
     .partners{
       display:flex;
       justify-content: space-between;
@@ -792,7 +791,7 @@ a {
     }
 
 
->>>>>>> c7a136aefc64433608953ac031c5d6b809a5d16f
+
 
 @media only screen and (max-width: 450px) {
   .parallelogram{
