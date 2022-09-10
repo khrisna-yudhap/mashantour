@@ -52,6 +52,16 @@ a {
   position: relative;
 }
 
+.blog-new-post {
+  height: 50%;
+  width: 100%;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero_5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .blog-hero {
   height: 15%;
   width: 100%;
@@ -683,6 +693,64 @@ a {
       transition:ease 0.5s;
     }
 
+/*Blog Page*/
+
+.new-post{
+  padding-top: 150px;
+}
+
+/* .latest-post-bg {
+  background: url('../images/hero_5.jpg');
+} */
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+/* .px-5 {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+} */
+
+.fw-bolder {
+  font-weight: bolder !important;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.link-dark {
+  color: #212529;
+}
+
+.card-img-top{
+  height: 200px;
+}
+/*End of Blog Page*/
 
 @media only screen and (max-width: 450px) {
   .parallelogram{
