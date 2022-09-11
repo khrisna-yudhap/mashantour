@@ -706,6 +706,14 @@ a {
       transition:ease 0.5s;
     }
 
+ 
+
+    .footer{
+      background-color: rgb(15, 15, 15);
+      margin-top: 50px;;
+      color: #dadada;
+    }
+
 
 /*Blog Page*/
 
@@ -793,7 +801,7 @@ a {
 
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
   .parallelogram{
       width: 30vh;
     }
@@ -825,6 +833,9 @@ a {
     .hero-text{
       text-align: center;
     }
+    .char-display{
+      display:none;
+    }
   }
 
   @media only screen 
@@ -836,5 +847,8 @@ a {
     }
     h1{
       font-size: 2.8rem;
+    }
+    .char-display{
+      display:none;
     }
 }
