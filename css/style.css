@@ -850,16 +850,7 @@ small, .small {
   text-decoration: line-through;
 }
 
-.btn{
-  display: inline-block;
-  margin-top: 1rem;
-  background:#ad0101;
-  color:#fff;
-  padding:.8rem 3rem;
-  border:.2rem #ad0101;
-  cursor: pointer;
-  font-size: 1.3rem;
-}
+
 /* End of Paket Tour Section*/
 /* Whatsapp Floating Button*/
 .btn-floating{
@@ -906,8 +897,11 @@ small, .small {
 }
 /* End of Whatsapp Floating Button*/
 /* Footer Section*/
+
 .footer{
-  background:#333;
+  background-color: rgb(15, 15, 15);
+  margin-top: 50px;;
+  color: #dadada;
 }
 
 .footer .box-container{
