@@ -1,5 +1,5 @@
 body {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Poppins";
   background-color: #fff;
   height: 200vh;
   position: relative; }
@@ -896,61 +896,6 @@ small, .small {
   width: 40px;
 }
 /* End of Whatsapp Floating Button*/
-/* Footer Section*/
-/* .footer{
-  background-color: rgb(15, 15, 15);
-  margin-top: 50px;;
-  color: #dadada;
-}
-
-.footer .box-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap:1.5rem;
-}
-
-.footer .box-container .box{
-  padding:1rem 0;
-  flex:1 1 25rem;
-}
-
-.footer .box-container .box h3{
-  font-size: 2.5rem;
-  padding:.7rem 0;
-  color:#fff;
-}
-
-.footer .box-container .box p{
-  font-size: 1.5rem;
-  padding:.7rem 0;
-  color:#eee;
-}
-
-.footer .box-container .box a{
-  display: block;
-  font-size: 1.5rem;
-  padding:.7rem 0;
-  color:#eee;
-}
-
-.footer .box-container .box a:hover{
-  color:var(--orange);
-  text-decoration: underline;
-}
-
-.footer .credit{
-  text-align: center;
-  padding:2rem 1rem;
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: normal;
-  color:#fff;
-  border-top: .1rem solid rgba(255,255,255,.2);
-}
-
-.footer .credit span{
-  color:var(--orange);
-} */
 /* End of Paket Tour Section*/
 /*End of Blog Page*/
 
@@ -1112,6 +1057,259 @@ small, .small {
       /*End of Post Content*/
 /*End of Blog-Post Page*/
 
+/*About Us Page*/
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+section {
+  overflow: hidden;
+  padding: 10px;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-header hr {
+  width: 70px;
+  height: 3px;
+  border-width:0;
+  color: #ad0101;
+  background-color: #ad0101;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.section-header h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--color-primary);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-header p {
+  margin-bottom: 0;
+}
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 140px 0 60px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(27, 47, 69, 0.7);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.breadcrumbs ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.breadcrumbs ol a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+}
+
+.about .content p {
+  margin: 30px 0;
+  color: #29486a;
+}
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team .team-member {
+  overflow: hidden;
+  background: #fff;
+}
+
+.team .content h3 {
+  font-weight: 700;
+  font-size: 36px;
+  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+}
+
+.team .content p {
+  margin: 30px 0;
+  color: #29486a;
+}
+
+.team .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .team-member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .social a {
+  transition: color 0.3s;
+  color: #31547c;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .social a i {
+  line-height: 0;
+}
+
+.team .team-member .social a:hover {
+  color: var(--color-primary);
+}
+
+.team .team-member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .team-member .member-info {
+  padding: 25px 15px 0 15px;
+  text-align: center;
+}
+
+.team .team-member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: var(--color-secondary);
+}
+
+.team .team-member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+.team .team-member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #6c757d;
+}
+
+.team .team-member:hover .social {
+  opacity: 1;
+}
+
+.ftco-section {
+  padding: 7em 0; }
+
+  .info-wrap {
+    color: rgba(255, 255, 255, 0.8); }
+    .info-wrap h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #000; 
+     padding-bottom: 15px;}
+    .info-wrap p{
+      color: #29486a;
+    }
+    .info-wrap .dbox {
+      width: 100%;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 25px;}
+      .info-wrap .dbox:last-child {
+        margin-bottom: 0; }
+      .info-wrap .dbox p {
+        margin-bottom: 0;
+        color: #29486a;}
+        .info-wrap .dbox p span {
+          font-weight: 500;
+          color: #29486a; }
+        .info-wrap .dbox p a {
+          color: #29486a; }
+      .info-wrap .dbox .icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #29486a; }
+        .info-wrap .dbox .icon span {
+          font-size: 20px;
+          color: #29486a; }
+      .info-wrap .dbox .text {
+        width: calc(100% - 50px); }
+
+.p-md-5 {
+  padding: 3rem !important; }
+
+/*End of About Us Page*/
+
 .partners{
   display:flex;
   justify-content: space-between;
@@ -1169,6 +1367,57 @@ small, .small {
     .char-display{
       display:none;
     }
+
+    /*About Us Page Responsive*/
+    .breadcrumbs h2 {
+      font-size: 40px;
+    }
+
+    .about .content h3 {
+      margin-top: -30px;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    .about .content p {
+      text-align: justify;
+    }
+
+    .team .content h3 {
+      font-size: 24px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .team .content p {
+      margin: 30px 0;
+      color: #29486a;
+      text-align: justify;
+    }
+
+    .team .team-member {
+      margin-top: 20px;
+    }
+
+    .info-wrap h3 {
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .info-wrap p{
+      text-align: justify;
+    }
+
+    .contact-wrap iframe{
+      width: 340px;
+      height: 300px;
+      margin-top: -50px;
+    }
+
+    .p-md-5, .p-4{
+      padding: 0rem !important;
+    }
+    /*End of About Us Page Responsive*/
   }
 
   @media only screen 
