@@ -99,4 +99,26 @@ $(function() {
 		aos_init();
 	  });
 
+	/*Load More Button Script*/
+	$(document).ready(function () {
+	$('.gallery-content .hovereffects:lt(3)').show();
+	$('.less').hide();
+	var items =  9;
+	var shown =  3;
+	$('.more').click(function () {
+		$('.less').show();
+		shown = $('.gallery-content .hovereffects:visible').length+3;
+		if(shown< items) {
+			$('.gallery-content .hovereffects:lt('+shown+')').show(300);
+		} else {
+			$('.gallery-content .hovereffects:lt('+items+')').show(300);
+			$('.more').hide();
+		}
+	});
+	$('.less').click(function () {
+		$('.gallery-content .hovereffects').not(':lt(3)').hide(300);
+		$('.more').show();
+		$('.less').hide();
+	});
+	});
 });

@@ -724,6 +724,9 @@ a {
       color: #dadada;
     }
 
+    .maps-footer{
+      margin-left:350px;
+    }
 
 /*Blog Page*/
 
@@ -1270,13 +1273,15 @@ section {
   padding: 7em 0; }
 
   .info-wrap {
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(255, 255, 255, 0.8); 
+    margin-top: 50px;
+  }
     .info-wrap h3 {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 30px;
       font-weight: bold;
       color: #000; 
-     padding-bottom: 15px;}
+      padding-bottom: 15px;}
     .info-wrap p{
       color: #29486a;
     }
@@ -1308,9 +1313,13 @@ section {
 .p-md-5 {
   padding: 3rem !important; }
 
+  .contact-wrap iframe{
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
 /*End of About Us Page*/
 
-/*Gallery Page*/
 .hovereffects{
   width: 100%;
   height: 100%;
@@ -1319,6 +1328,7 @@ section {
   text-align: center;
   cursor: default;
   margin-bottom: 30px;
+  display: none;
 }
 
 .hovereffects .overlay{
@@ -1386,6 +1396,38 @@ section {
  -webkit-transition-delay: .2s;
  transition-delay: .2s;
 } 
+
+.more, .less {
+  background-color: #fff;
+  clear: both;
+  color: #334;
+  border: 1px solid #334;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  margin-top: 6px;
+  padding: 10px 0;
+  text-align: center;
+  align-items: center;
+	text-transform: uppercase;
+  margin: 0px 450px 0px 450px;
+  margin-bottom: 20px;
+}
+
+.more:hover{
+  background-color: crimson;
+  transition: background-color 1s ease-in;
+  border-color: crimson;
+  color:#fff;
+}
+
+.less:hover{
+  background-color: crimson;
+  transition: background-color 1s ease-in;
+  border-color: crimson;
+  color:#fff;
+}
 
 body.lb-disable-scrolling {
   overflow: hidden;
@@ -1591,138 +1633,8 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
 /*End of Gallery Page*/
-
-/*Second Gallery*/
-ul, li{
-  list-style: none;
-  padding: 0;
-  margin: 10px;
-}
-
-.grid-wrap{
-  position: relative;
-  margin: 0;
-  padding: 10px;
-}
-
-.grid-wrap ul{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(100px,auto));
-  grid-auto-flow: dense;
-  grid-gap: 2px;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.grid-wrap ul li{
-  position: relative;
-}
-
-.grid-wrap ul li:nth-child(1){
-  grid-row: span 2;
-  grid-column: span 4;
-}
-
-.grid-wrap ul li:nth-child(2){
-  grid-row: span 3;
-  grid-column: span 3;
-}
-
-.grid-wrap ul li:nth-child(3){
-  grid-row: span 2;
-  grid-column: span 5;
-}
-
-.grid-wrap ul li:nth-child(4){
-  grid-row: span 2;
-  grid-column: span 6;
-}
-
-.grid-wrap ul li:nth-child(5){
-  grid-row: span 2;
-  grid-column: span 3;
-}
-
-.grid-wrap ul li:nth-child(6){
-  grid-row: span 2;
-  grid-column: span 3;
-}
-
-.grid-wrap ul li:nth-child(7){
-  grid-row: span 2;
-  grid-column: span 4;
-}
-
-.grid-wrap ul li:nth-child(8){
-  grid-row: span 2;
-  grid-column: span 5;
-}
-
-.grid-wrap ul li:nth-child(9){
-  grid-row: span 1;
-  grid-column: span 4;
-}
-
-.grid-wrap ul li:nth-child(10){
-  grid-row: span 2;
-  grid-column: span 5;
-}
-
-.grid-wrap ul li:nth-child(11){
-  grid-row: span 3;
-  grid-column: span 3;
-}
-
-.grid-wrap ul li:nth-child(12){
-  grid-row: span 2;
-  grid-column: span 5;
-}
-
-.grid-wrap ul li:nth-child(13){
-  grid-row: span 2;
-  grid-column: span 6;
-}
-
-.grid-wrap ul li:nth-child(14){
-  grid-row: span 2;
-  grid-column: span 3;
-}
-
-.grid-wrap ul li:nth-child(15){
-  grid-row: span 2;
-  grid-column: span 3;
-}
-
-.grid-wrap ul li:nth-child(16){
-  grid-row: span 2;
-  grid-column: span 4;
-}
-
-.grid-wrap ul li:nth-child(17){
-  grid-row: span 2;
-  grid-column: span 5;
-}
-
-.grid-wrap ul li:nth-child(18){
-  grid-row: span 1;
-  grid-column: span 4;
-}
-
-.grid-wrap ul img{
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
-.grid-wrap ul li:hover{
-  filter: opacity();
-  transition: .2s;
-  cursor: pointer;
-}
-/*End of Second Gallery*/
 
 .partners{
   display:flex;
@@ -1823,10 +1735,15 @@ ul, li{
     }
 
     .contact-wrap iframe{
-      width: 290px;
+      width: 320px;
       height: 300px;
-      margin-top: -30px;
+      margin-left: 0px;
+      margin-top: 30px;
     }
+
+    /* .p-md-5, .p-4{
+      padding: 0rem !important;
+    } */
     
     /*End of About Us Page Responsive*/
 
@@ -1848,7 +1765,29 @@ ul, li{
       font-size: 15px;
       padding: 8px;
      }
+
+     .more, .less {
+      margin: 0px 40px 20px 40px;
+    }
+    
      /*End of Gallery Page Responsive*/
+    
+    /*Footer Page Responsive*/
+    .maps-footer{
+      margin-left:20px;
+    }
+
+    .maps-footer iframe{
+      width: 330px;
+      height: 300px;
+    }
+
+    .info-footer{
+      column-width: 200px;
+    }
+    /*End of Footer Page Responsive*/
+
+
   }
 
   @media only screen 
